@@ -1,0 +1,213 @@
+html {
+    font-size: 62.5%;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+   --color-primary: #003284;
+   --color-accent: #ede5e5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Colours Blue #003284 */ 
+
+
+h1 {
+    font-size: 3rem;
+    color: white;
+    font-weight: 500;
+    margin: 5rem 10rem;
+    background: transparent;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 2.75rem;
+}
+
+p {
+   font-size: 2.75rem;
+   color: white;
+
+}
+
+/* Fixed Background */
+.background-layer {
+  position: fixed;
+  inset: 0;
+  background-image: url("../images/hero2048.jpg");
+ background-size: cover;
+ background-position: center;
+  background-size: cover;
+  z-index: -1;   /* Behind everything */
+}
+
+.hero {
+ height: 100vh;
+ display: flex;
+ position: relative;
+ justify-content: center;
+ align-items: center;
+}
+
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+@media screen and (min-width:768px) {
+ .hero {
+ background-size: cover;
+ background-position: center;
+}
+
+
+.hero__content .btn {
+ padding: 1rem 2rem;
+ font-size: 3rem;
+ background: var(--color-primary);
+ color: #fff;
+ text-decoration: none;
+}
+}
+
+/* Header */
+.site-header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 20px 40px;
+}
+
+/* Container */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Logo */
+.logo {
+  font-size: 4rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--color-accent);
+}
+
+/* Nav */
+.nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  display: none;
+
+}
+
+.nav.active {
+  display: block;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 8rem;
+  
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--color-accent);
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+.nav-links a:hover {
+   color: var(--color-primary);
+}
+
+/* CTA Button */
+.cta-btn {
+  display: none;
+  padding: 1rem 2rem;
+  border: 1px solid var(--color-accent);
+  border-radius: 25px;
+  text-decoration: none;
+  color: var(--color-accent);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.cta-btn:hover {
+   color: var(--color-primary);
+}
+
+/* Hamburger */
+.nav-toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-accent);
+}
+
+.nav-toggle span {
+  width: 25px;
+  height: 2px;
+  background: var(--color-accent);
+}
+
+/* ========================= */
+/* Desktop Styles */
+/* ========================= */
+
+@media (min-width: 768px) {
+
+  .nav {
+    position: static;
+    display: block;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 30px;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    margin-left: auto;
+  }
+
+  .nav-container {
+    gap: 40px;
+  }
+
+}
