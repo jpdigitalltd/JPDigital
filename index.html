@@ -12,32 +12,137 @@
     <header class="site-header">
       <div class="nav-container">
         <!-- Logo / Company Name -->
-        <a href="#" class="logo">j p digital</a>
-
-        <!-- Navigation -->
-        <nav class="nav">
-          <ul class="nav-links">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-
-        <!-- CTA Button (desktop only) -->
-        <a href="mailto:jake@jpdigitalltd.com" class="cta-btn"
-          >Start Your Project</a
-        >
-
-        <!-- Hamburger Toggle (mobile only) -->
-        <button class="nav-toggle" aria-label="Toggle navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <a href="#" class="logo">JPDigital</a>
       </div>
     </header>
-    <div class="hero"></div>
-    <script src="js/main.js"></script>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>
+            Building clean, modern and user-friendly websites for your business.
+          </h1>
+
+          <p>
+            Modern websites designed to look professional, perform smoothly, and
+            represent your business with confidence.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary"> View Projects </a>
+
+            <a href="#contact" class="btn btn-secondary"> Contact Me </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section>
+      <div class="container">
+        <h2 id="projects" class="section-title">Featured Projects</h2>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/cowshed512.png" alt="" />
+            </div>
+
+            <div class="project-content">
+              <h3>Cowshed Burgers</h3>
+
+              <p>
+                Quality, handcrafted burgers in Scarborough made with fresh
+                ingredients!
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/jj512.png" alt="" />
+            </div>
+
+            <div class="project-content">
+              <h3>J&J Dining</h3>
+
+              <p>
+                Luxury private dining experiences at home across Manchester,
+                Cheshire and surrounding areas. Bespoke menus for special
+                occasions.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image"></div>
+
+            <div class="project-content">
+              <h3>Pirie Property Maintenance</h3>
+
+              <p>
+                Local handyman service. Joinery, landscaping, plumbing and more.
+                Serving Montrose and surrounding areas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+
+    <section>
+      <div class="container about">
+        <div class="about-text">
+          <h2 class="section-title">About Me</h2>
+
+          <p>
+            Hi, I'm Jake. I build modern websites for businesses looking for a
+            clean, professional, and user-friendly online presence.
+          </p>
+
+          <p>
+            I enjoy combining thoughtful design with responsive development to
+            create a website that not only looks good but feels smooth and easy
+            to use. If you want to start your project, don't hesitate to get in
+            touch!
+          </p>
+        </div>
+
+        <div class="about-card"></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container contact">
+        <h2 class="section-title">Let's Work Together</h2>
+
+        <p class="contact-text">
+          Have a project in mind or want to discuss a website for your business?
+          Feel free to get in touch.
+        </p>
+
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+
+          <input type="email" placeholder="Email Address" required />
+
+          <textarea
+            placeholder="Tell me about your project"
+            rows="6"
+            required
+          ></textarea>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <div class="container">© 2026 J P Digital LTD. All rights reserved.</div>
+    </footer>
   </body>
 </html>
