@@ -45,7 +45,14 @@
         <div class="projects-grid">
           <div class="project-card">
             <div class="project-image">
-              <img src="images/cowshed512.png" alt="" />
+              <a
+                href="https://www.cowshedburgers.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-image"
+              >
+                <img src="images/cowshed512.png" alt="" />
+              </a>
             </div>
 
             <div class="project-content">
@@ -60,7 +67,14 @@
 
           <div class="project-card">
             <div class="project-image">
-              <img src="images/jj512.png" alt="" />
+              <a
+                href="https://www.jjdining.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-image"
+              >
+                <img src="images/jj512.png" alt="" />
+              </a>
             </div>
 
             <div class="project-content">
@@ -68,8 +82,7 @@
 
               <p>
                 Luxury private dining experiences at home across Manchester,
-                Cheshire and surrounding areas. Bespoke menus for special
-                occasions.
+                Cheshire and surrounding areas.
               </p>
             </div>
           </div>
@@ -123,15 +136,36 @@
           Feel free to get in touch.
         </p>
 
-        <form class="contact-form">
-          <input type="text" placeholder="Your Name" required />
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/xbdwqrro"
+          method="POST"
+          target="_blank"
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            minlength="2"
+            maxlength="50"
+          />
 
-          <input type="email" placeholder="Email Address" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+            maxlength="100"
+          />
 
           <textarea
+            name="message"
             placeholder="Tell me about your project"
             rows="6"
             required
+            minlength="10"
+            maxlength="1000"
           ></textarea>
 
           <button type="submit" class="btn btn-primary">Send Message</button>

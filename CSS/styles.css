@@ -117,6 +117,55 @@ body {
       color: var(--text);
     }
 
+    @media (min-width: 1024px) {
+
+    .logo {
+      font-size: 7rem;
+    }
+
+    .container {
+    width: min(1400px, 92%);
+  }
+
+    
+
+  .hero {
+    min-height: 100vh;
+    padding: 8rem 0;
+    justify-content: flex-start;
+    
+  }
+
+  .hero-content {
+    margin-left: 6rem;
+    max-width: 900px;
+    text-align: left;
+  }
+
+  .hero h1 {
+    font-size: 10rem;
+    max-width: 1000px;
+  }
+
+  .hero p {
+    font-size: 4rem;
+    max-width: 750px;
+    line-height: 1.8;
+  }
+
+  .hero-buttons {
+    gap: 2.5rem;
+    font-size: 3rem;
+    justify-content: flex-start;
+  }
+
+  .btn {
+    padding: 1.4rem 2.4rem;
+    border-radius: 16px;
+  }
+
+}
+
     /* SECTION */
 
     section {
@@ -161,6 +210,14 @@ body {
           #111827
         );
     }
+
+    .project-image img {
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.03);
+}
 
     .project-content {
       padding: 1.5rem;
