@@ -3,193 +3,470 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>J P Digital</title>
-    <link rel="stylesheet" href="CSS/normalise.css" />
+
+    <meta
+      name="description"
+      content="JP Digital - Modern, fast and professional websites for local businesses."
+    />
+
+    <title>J P Digital | Modern Websites for Local Businesses</title>
+
     <link rel="stylesheet" href="CSS/styles.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <div class="background-layer"></div>
-    <header class="site-header">
-      <div class="nav-container">
-        <!-- Logo / Company Name -->
-        <a href="#" class="logo">JPDigital</a>
-      </div>
-    </header>
-    <section class="hero">
-      <div class="hero-container">
-        <div class="hero-content">
-          <h1>
-            Building clean, modern and user-friendly websites for your business.
-          </h1>
+    <!-- =========================
+       NAVIGATION
+  ========================== -->
 
-          <p>
-            Modern websites designed to look professional, perform smoothly, and
-            represent your business with confidence.
-          </p>
+    <header class="header">
+      <div class="container nav">
+        <!-- EDITABLE LOGO -->
+        <a href="#" class="logo">
+          <img src="images/logo-200.png" alt="J P Digital Logo" />
+          <span class="logo-text">J P DIGITAL</span>
+        </a>
 
-          <div class="hero-buttons">
-            <a href="#projects" class="btn btn-primary"> View Projects </a>
+        <nav class="desktop-nav">
+          <a href="#home" class="active">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
 
-            <a href="#contact" class="btn btn-secondary"> Contact Me </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-
-    <section>
-      <div class="container">
-        <h2 id="projects" class="section-title">Featured Projects</h2>
-
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-image">
-              <a
-                href="https://www.cowshedburgers.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-image"
-              >
-                <img src="images/cowshed512.png" alt="" />
-              </a>
-            </div>
-
-            <div class="project-content">
-              <h3>Cowshed Burgers</h3>
-
-              <p>
-                Quality, handcrafted burgers in Scarborough made with fresh
-                ingredients!
-              </p>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-image">
-              <a
-                href="https://www.jjdining.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-image"
-              >
-                <img src="images/jj512.png" alt="" />
-              </a>
-            </div>
-
-            <div class="project-content">
-              <h3>J&J Dining</h3>
-
-              <p>
-                Luxury private dining experiences at home across Manchester,
-                Cheshire and surrounding areas.
-              </p>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-image"></div>
-
-            <div class="project-content">
-              <h3>Pirie Property Maintenance</h3>
-
-              <p>
-                Local handyman service. Joinery, landscaping, plumbing and more.
-                Serving Montrose and surrounding areas.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-
-    <section class="about-section">
-      <div class="container about">
-        <div class="about-text">
-          <h2 class="section-title">About JPDigital</h2>
-
-          <p>Hi, I'm Jake.</p>
-
-          <p>
-            JPDigital was created to offer clean, modern websites for businesses
-            that want to build trust online and turn visitors into real
-            enquiries. My focus is on professional design, mobile-friendly
-            performance, making it easy for customers to learn about your
-            business and get in touch.
-          </p>
-          <p>
-            Our goal is simple - to offer no nonsense, reliable web design
-            without all the confusing jargon! Whether you're starting from
-            scratch or looking to improve your current website, I aim to create
-            something that not only looks great, but an online presence that
-            feels like a true reflection of your business.
-          </p>
-          <p>
-            If you're ready to create an online experience that truly reflects
-            your business, get in touch using the contact form below.
-          </p>
-        </div>
-
-        <div class="about-card">
-          <img src="images/computer.jpg" alt="" />
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-      <div class="container contact">
-        <h2 class="section-title">Let's Work Together</h2>
-
-        <p class="contact-text">
-          Have a project in mind or want to discuss a website for your business?
-          Feel free to get in touch.
-        </p>
-
-        <form
-          class="contact-form"
-          action="https://formspree.io/f/xbdwqrro"
-          method="POST"
-          target="_blank"
+        <!-- Mobile menu button -->
+        <button
+          class="menu-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
         >
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-            minlength="2"
-            maxlength="50"
-          />
-
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            required
-            maxlength="100"
-          />
-
-          <textarea
-            name="message"
-            placeholder="Tell me about your project"
-            rows="6"
-            required
-            minlength="10"
-            maxlength="1000"
-          ></textarea>
-
-          <button type="submit" class="btn btn-primary contact-btn">
-            Send Message
-          </button>
-        </form>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-    </section>
 
-    <!-- FOOTER -->
+      <!-- Mobile navigation -->
+      <nav class="mobile-nav">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-    <footer>
-      <div class="container">© 2026 J P Digital LTD. All rights reserved.</div>
+    <main>
+      <!-- =========================
+         HERO
+    ========================== -->
+
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">MODERN WEBSITES. REAL RESULTS.</p>
+
+            <h1>
+              Modern, fast and
+              <span>custom websites</span>
+              for local businesses.
+            </h1>
+
+            <p class="hero-text">
+              I design and build simple, effective websites that help businesses
+              look professional, get found and grow.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">
+                View Recent Projects
+                <span>→</span>
+              </a>
+
+              <a href="#contact" class="btn btn-secondary">
+                Get in Touch
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero visual -->
+
+          <div class="hero-visual">
+            <div class="browser-window">
+              <div class="browser-bar">
+                <div class="browser-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <div class="browser-address">yourbusiness.co.uk</div>
+              </div>
+
+              <div class="browser-content">
+                <div class="mock-nav">
+                  <strong>YOUR BUSINESS</strong>
+
+                  <div>
+                    <span>Home</span>
+                    <span>About</span>
+                    <span>Services</span>
+                    <span>Contact</span>
+                  </div>
+                </div>
+
+                <div class="mock-hero">
+                  <p>MODERN &amp; PROFESSIONAL</p>
+
+                  <h3>
+                    Your business<br />
+                    online, done right.
+                  </h3>
+
+                  <button>Find out more →</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phone -->
+
+            <div class="phone">
+              <div class="phone-screen">
+                <div class="phone-header">
+                  <strong>YOUR<br />BUSINESS</strong>
+                  <span>☰</span>
+                </div>
+
+                <div class="phone-content">
+                  <small>MODERN &amp; RELIABLE</small>
+
+                  <h4>
+                    Your business<br />
+                    online, done right.
+                  </h4>
+
+                  <button>Explore →</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+         PROJECTS
+    ========================== -->
+
+      <section class="projects section" id="projects">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">RECENT PROJECTS</p>
+
+            <h2>A selection of recent work</h2>
+
+            <p>
+              Here are a few websites I've built for local businesses. Each
+              project is tailored to the client's needs, with a focus on clean
+              design, performance and results.
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <!-- PROJECT 1 -->
+
+            <article class="project-card">
+              <div class="project-image">
+                <img
+                  src="images/cowshed512.png"
+                  alt="Cowshed Burgers website project"
+                  loading="lazy"
+                />
+
+                <div class="image-overlay">
+                  COWSHED
+                  <span>BURGERS</span>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <p class="project-category">RESTAURANT</p>
+
+                <h3>Cowshed Burgers</h3>
+
+                <p>
+                  Modern website for a Scarborough burger restaurant. Clean
+                  design, easy navigation and a focus on mouth-watering food
+                  photography.
+                </p>
+
+                <a href="https://www.cowshedburgers.com" class="project-link">
+                  View Project <span>→</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- PROJECT 2 -->
+
+            <article class="project-card">
+              <div class="project-image">
+                <img
+                  src="images/jj512.png"
+                  alt="JJ Dining website project"
+                  loading="lazy"
+                />
+
+                <div class="image-overlay dining">
+                  J&amp;J
+                  <span>DINING</span>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <p class="project-category">PRIVATE DINING</p>
+
+                <h3>JJ Dining</h3>
+
+                <p>
+                  Elegant and minimal website for a private dining experience
+                  based in Manchester and Greater Manchester.
+                </p>
+
+                <a href="https://www.jjdining.com" class="project-link">
+                  View Project <span>→</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- PROJECT 3 -->
+
+            <article class="project-card">
+              <div class="project-image">
+                <img
+                  src="images/ppm1024.png"
+                  alt="Pirie Property Maintenance website project"
+                  loading="lazy"
+                />
+
+                <div class="image-overlay property">
+                  PIRIE
+                  <span>PROPERTY MAINTENANCE</span>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <p class="project-category">PROPERTY SERVICES</p>
+
+                <h3>Pirie Property Maintenance</h3>
+
+                <p>
+                  Professional website for a local handyman and property
+                  maintenance business. Clear service information, contact
+                  details and a simple layout.
+                </p>
+
+                <a href="https://www.pirieproperty.co.uk" class="project-link">
+                  View Project <span>→</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+         ABOUT / BENEFITS
+    ========================== -->
+
+      <section class="about section" id="about">
+        <div class="container about-grid">
+          <div class="about-text">
+            <p class="eyebrow">WHY WORK WITH ME</p>
+
+            <h2>
+              Simple process.<br />
+              Great results.
+            </h2>
+
+            <p>
+              I keep things straightforward — clear communication, transparent
+              pricing and a website that does the job. No jargon, no hassle.
+            </p>
+          </div>
+
+          <div class="benefits">
+            <div class="benefit">
+              <div class="benefit-icon">⚡</div>
+
+              <div>
+                <h3>Fast &amp; Reliable</h3>
+                <p>Built with performance and speed in mind.</p>
+              </div>
+            </div>
+
+            <div class="benefit">
+              <div class="benefit-icon">◫</div>
+
+              <div>
+                <h3>Mobile Responsive</h3>
+                <p>Looks great on every device, every time.</p>
+              </div>
+            </div>
+
+            <div class="benefit">
+              <div class="benefit-icon">⌕</div>
+
+              <div>
+                <h3>SEO Ready</h3>
+                <p>Optimised to help your business get found online.</p>
+              </div>
+            </div>
+
+            <div class="benefit">
+              <div class="benefit-icon">♢</div>
+
+              <div>
+                <h3>Ongoing Support</h3>
+                <p>Optional maintenance packages available.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+         CONTACT
+    ========================== -->
+
+      <section class="contact section" id="contact">
+        <div class="container contact-grid">
+          <!-- Contact information -->
+
+          <div class="contact-info">
+            <p class="eyebrow">GET IN TOUCH</p>
+
+            <h2>Let's build something great together.</h2>
+
+            <p>
+              Have a project in mind or just want to find out more? Fill in the
+              form and I'll get back to you as soon as possible.
+            </p>
+
+            <div class="contact-details">
+              <a href="mailto:jake@jpdigitalltd.com">
+                <span class="contact-icon">✉</span>
+                jake@jpdigitalltd.com
+              </a>
+            </div>
+          </div>
+
+          <!-- =========================
+             FORMSPREE FORM
+        ========================== -->
+
+          <div class="contact-form-wrapper">
+            <form
+              id="contact-form"
+              action="https://formspree.io/f/xbdwqrro"
+              method="POST"
+            >
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name"> Name * </label>
+
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    minlength="2"
+                    maxlength="80"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email"> Email * </label>
+
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    maxlength="120"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="phone"> Phone </label>
+
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Your phone number"
+                  maxlength="25"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message"> Message * </label>
+
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell me about your project..."
+                  minlength="10"
+                  maxlength="2000"
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Honeypot spam protection -->
+
+              <input
+                type="text"
+                name="_gotcha"
+                class="honeypot"
+                tabindex="-1"
+                autocomplete="off"
+              />
+
+              <button type="submit" class="btn btn-primary form-submit">
+                Send Message
+                <span>→</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+       FOOTER
+  ========================== -->
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <a href="#" class="logo">
+          <img src="images/logo-128.png" alt="" />
+
+          <span class="logo-text"> J P DIGITAL </span>
+        </a>
+
+        <p>© <span id="year"></span> J P Digital. All rights reserved.</p>
+      </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
